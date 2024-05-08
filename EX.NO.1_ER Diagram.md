@@ -20,7 +20,8 @@
 ![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/96d8d7cb-01e2-4129-b640-03f3085eca53)
 
 ### SQL DDL Schema 
-'''CREATE TABLE Programs
+'''
+CREATE TABLE Programs
 (
   pro_id INT NOT NULL,
   pro_name INT NOT NULL,
