@@ -1,6 +1,6 @@
 # EX.NO 5 Sub Queries and Views in SQL
-### DATE:
-#### REGISTER NUMBER:
+### DATE: 20.03.2024
+#### REGISTER NUMBER: 212222040015
 ## AIM:
 To study and implement Subqueries and Views in SQL 
 ## THEORY
@@ -49,7 +49,8 @@ WHERE purch_amt >
      FROM orders 
      WHERE ord_date = '2012-10-10');
 ```
-### TEST QUERY AND ITS OUTPUT 
+### TEST QUERY AND ITS OUTPUT
+
 ![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/8212ebd5-7e8a-41ec-8edc-c1d6ad39d11c)
 ### QUERY 2
 ![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/fc3072fe-3330-4c95-b3c8-cc2bf55f6286)
@@ -61,7 +62,7 @@ WHERE customer_id =
     (SELECT salesman_id - 2001
      FROM salesman
      WHERE name = 'Mc Lyon');
-     ```
+```
 ### TEST QUERY AND ITS OUTPUT
 ![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/c7dae58e-3c29-4bf5-88cb-40b86b2cd4f9)
 ### QUERY 3
@@ -110,7 +111,9 @@ WHERE age < (SELECT AVG(age) FROM employee WHERE income > 250000);
 ### QUERY 7
 ![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/77874943-ee10-4e4b-8ccd-452ed8488f98)
 ### SQL QUERY
+```
 SELECT * FROM CUSTOMERS WHERE ID IN (SELECT ID FROM CUSTOMERS WHERE SALARY > 1500);
+```
 ### OUTPUT
 ![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/69fa4e7e-b59f-46d4-b68d-8eb26d3a31aa)
 ### QUERY 8
@@ -135,7 +138,9 @@ FROM StudentDetails1
 WHERE S_ID < 5;
 ```
 ### TEST QUERY AND ITS OUTPUT
+```
 SELECT * FROM v1;
+```
 ![image](https://github.com/UmaRani-Github/DBMS_NEW_EVEN23-24/assets/144427076/ed008658-1152-4e5f-962e-b97b66cd062c)
 ### QUERY 10
 Delete a view v1.
